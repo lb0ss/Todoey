@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		545D0C462030F63C000C5F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545D0C452030F63C000C5F9C /* AppDelegate.swift */; };
-		545D0C482030F63C000C5F9C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545D0C472030F63C000C5F9C /* TodoListViewController.swift */; };
 		545D0C4B2030F63C000C5F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545D0C492030F63C000C5F9C /* Main.storyboard */; };
 		545D0C4D2030F63C000C5F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545D0C4C2030F63C000C5F9C /* Assets.xcassets */; };
 		545D0C502030F63C000C5F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545D0C4E2030F63C000C5F9C /* LaunchScreen.storyboard */; };
+		54AF3CFE204BABFF0037AF0A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF3CFD204BABFF0037AF0A /* Item.swift */; };
+		54AF3D03204BC9580037AF0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 545D0C512030F63C000C5F9C /* Info.plist */; };
+		54AF3D05204BCB2D0037AF0A /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF3D04204BCB2D0037AF0A /* TodoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		545D0C422030F63C000C5F9C /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545D0C452030F63C000C5F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		545D0C472030F63C000C5F9C /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		545D0C4A2030F63C000C5F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		545D0C4C2030F63C000C5F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545D0C4F2030F63C000C5F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		545D0C512030F63C000C5F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AF3CFD204BABFF0037AF0A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		54AF3D04204BCB2D0037AF0A /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +58,46 @@
 			isa = PBXGroup;
 			children = (
 				545D0C452030F63C000C5F9C /* AppDelegate.swift */,
-				545D0C472030F63C000C5F9C /* TodoListViewController.swift */,
-				545D0C492030F63C000C5F9C /* Main.storyboard */,
-				545D0C4C2030F63C000C5F9C /* Assets.xcassets */,
-				545D0C4E2030F63C000C5F9C /* LaunchScreen.storyboard */,
-				545D0C512030F63C000C5F9C /* Info.plist */,
+				54AF3D00204BAC150037AF0A /* Controllers */,
+				54AF3D01204BAC2E0037AF0A /* Views */,
+				54AF3CFF204BAC080037AF0A /* Data Model */,
+				54AF3D02204BAC4F0037AF0A /* Supporting Files */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		54AF3CFF204BAC080037AF0A /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				54AF3CFD204BABFF0037AF0A /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		54AF3D00204BAC150037AF0A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54AF3D04204BCB2D0037AF0A /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		54AF3D01204BAC2E0037AF0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				545D0C492030F63C000C5F9C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54AF3D02204BAC4F0037AF0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				545D0C512030F63C000C5F9C /* Info.plist */,
+				545D0C4C2030F63C000C5F9C /* Assets.xcassets */,
+				545D0C4E2030F63C000C5F9C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AF3D03204BC9580037AF0A /* Info.plist in Resources */,
 				545D0C502030F63C000C5F9C /* LaunchScreen.storyboard in Resources */,
 				545D0C4D2030F63C000C5F9C /* Assets.xcassets in Resources */,
 				545D0C4B2030F63C000C5F9C /* Main.storyboard in Resources */,
@@ -136,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				545D0C482030F63C000C5F9C /* TodoListViewController.swift in Sources */,
+				54AF3D05204BCB2D0037AF0A /* TodoListViewController.swift in Sources */,
+				54AF3CFE204BABFF0037AF0A /* Item.swift in Sources */,
 				545D0C462030F63C000C5F9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M4CBN576QH;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "Todoey/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bosilin.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M4CBN576QH;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "Todoey/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bosilin.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
